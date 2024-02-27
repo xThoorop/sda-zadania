@@ -20,7 +20,7 @@ String
 
 
     public static void main(String[] args) {
-        List<String> list = Arrays.asList("a","b","c","d","z");
+        List<String> list = Arrays.asList("a","b","c","d","z","y");
         sortFromZToA(list);
         list.forEach(System.out::println);
 
