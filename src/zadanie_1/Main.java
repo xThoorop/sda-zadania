@@ -22,7 +22,7 @@ String
     public static void main(String[] args) {
         List<String> list = Arrays.asList("a","b","c","d","z");
         sortFromZToA(list);
-        list.stream().forEach(System.out::println);
+        list.forEach(System.out::println);
     }
 
 
