@@ -1,4 +1,4 @@
-package zadanie_5;
+package day_27_02_2024.zadanie_5;
 
 public class Main {
 

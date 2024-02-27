@@ -1,4 +1,4 @@
-package zadanie_4;
+package day_27_02_2024.zadanie_4;
 
 public class Main {
 
@@ -15,8 +15,8 @@ public class Main {
         storage.addToStorage(5,"abcde");
         storage.addToStorage(7,"abcde");
         storage.addToStorage(6,"abcde");
-        //storage.printValues(5);
-        storage.findValues("abcde");
+        storage.printValues(1);
+       // storage.findValues("abcde");
     }
 
     }

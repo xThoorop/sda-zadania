@@ -1,4 +1,4 @@
-package zadanie_3;
+package day_27_02_2024.zadanie_3;
 
 import java.util.Map;
 

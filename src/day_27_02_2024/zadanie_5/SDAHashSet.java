@@ -1,8 +1,6 @@
-package zadanie_5;
+package day_27_02_2024.zadanie_5;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Set;
 
 public class SDAHashSet<V> implements SetInterface<V>{
 

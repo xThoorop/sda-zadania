@@ -1,4 +1,4 @@
-package zadanie_2;
+package day_27_02_2024.zadanie_2;
 
 import java.util.Arrays;
 import java.util.Collections;

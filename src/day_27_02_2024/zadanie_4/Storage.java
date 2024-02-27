@@ -1,4 +1,4 @@
-package zadanie_4;
+package day_27_02_2024.zadanie_4;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -15,6 +15,7 @@ public class Storage<K,V> {
     }
 
     public void addToStorage(K key, V value){
+        //		this.map.computeIfAbsent(key, k -> new ArrayList<>()).add(value);
         if(this.map.containsKey(key)){
             this.map.put(key, this.map.get(key).addValues(value));
 
@@ -31,6 +32,7 @@ public class Storage<K,V> {
         }
     }
     public void printValues(K key){
+
         for (Map.Entry<K,Values> entry : this.map.entrySet()){
             if(key.equals(entry.getKey())){
                 System.out.println(entry.getValue().getValues());

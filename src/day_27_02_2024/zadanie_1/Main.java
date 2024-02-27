@@ -1,4 +1,4 @@
-package zadanie_1;
+package day_27_02_2024.zadanie_1;
 
 
 import java.util.*;
