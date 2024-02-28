@@ -32,7 +32,7 @@ public class Gun extends Magazine{
             return;
         }
         if(super.isLoaded()){
-            System.out.println("Strzal");
+            System.out.println("Strzal " + super.getBullets() + "/" + super.getMax_bullets());
             super.setLoaded(false);
             if(super.getBullets()>0) {
                 this.loading=true;
@@ -50,13 +50,15 @@ public class Gun extends Magazine{
                 });
                 thread.shutdown();
             }else {
-                throw new EmptyMagazineException();
+                if(!isLoading()){
+                    this.loading = false;
+                    throw new EmptyMagazineException();
+                }
+
+
 
             }
-            }else {
-
-
-        }
+            }
     }
 
     public boolean isLoading() {

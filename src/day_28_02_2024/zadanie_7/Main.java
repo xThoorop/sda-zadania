@@ -22,6 +22,7 @@ shot() → jedno wywołanie wystrzeliwuje (wypisuje w konsoli wartość string) 
         magazine.setBullets(2);//+1 zaladowana aktualnie
         Gun gun = new Gun(magazine);
         Scanner scanner = new Scanner(System.in);
+        System.out.println("komendy: strzel, naladuj <liczba>");
         while(true){
             String command = scanner.nextLine();
             if(command.equals("strzel")){
