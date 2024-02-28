@@ -1,12 +1,13 @@
 package day_28_02_2024.zadanie_8.validators;
 
+import day_28_02_2024.zadanie_8.interfaces.Validator;
 import day_28_02_2024.zadanie_8.objects.Parcel;
 
-import java.util.function.Function;
 
-public class Validator implements Val{
+public class ParcelValidator implements Validator {
 
 
+    @Override
     public boolean validate(Parcel parcel,boolean showMessages) {
         int sum = parcel.getXLenght() + parcel.getYLenght() + parcel.getZLenght();
         if (sum > 300) {
