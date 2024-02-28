@@ -4,7 +4,7 @@ import day_28_02_2024.zadanie_8.objects.Parcel;
 
 import java.util.function.Function;
 
-public class Validator {
+public class Validator implements Val{
 
 
     public boolean validate(Parcel parcel,boolean showMessages) {
