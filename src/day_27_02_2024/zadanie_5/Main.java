@@ -1,5 +1,7 @@
 package day_27_02_2024.zadanie_5;
 
+import java.util.HashSet;
+
 public class Main {
 
 
@@ -9,5 +11,6 @@ public class Main {
         sdaHashSet.add("test");
         sdaHashSet.add("test");
         System.out.println(sdaHashSet.size());
+
     }
 }
