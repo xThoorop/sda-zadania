@@ -1,6 +1,4 @@
-ZADANIE 10.
-Stwórz klasę MoveDirection posiadającą pola double x, double y oraz gettery, settery i
-konstruktor. Stwórz interfejs Movable posiadający metodę move(MoveDirection moveDirection).
-Zaimplementuj interfejs w klasach z poprzedniego zadania (Point2D oraz Circle).
-Przy wywołaniu metody move(MoveDirection moveDirection), obiekty mają zmienić swoje położenie na podstawie przekazanego kierunku (MoveDirection).
-Sprawdź poprawność przesunięcia wywołując pozostałe metody klasy Circle.
+ZADANIE 11.
+Stwórz interfejs Resizable posiadający metodę resize(double resizeFactor).
+Zaimplementuj interfejs w klasie z poprzedniego zadania (Circle). Przy wywołaniu metody resize(doubleresizeFactor), okrąg ma zmienić swoje rozmiary o zadany współczynnik (1.5, 0.5, 10.0, itp).
+Sprawdź poprawność zmiany rozmiaru wywołując pozostałe metody klasy Circle.

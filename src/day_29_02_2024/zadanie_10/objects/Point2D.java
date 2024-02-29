@@ -1,6 +1,6 @@
-package day_29_02_2024.objects;
+package day_29_02_2024.zadanie_10.objects;
 
-import day_29_02_2024.interfaces.Movable;
+import day_29_02_2024.zadanie_10.interfaces.Movable;
 
 public class Point2D implements Movable {
 

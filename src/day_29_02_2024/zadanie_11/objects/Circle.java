@@ -1,11 +1,12 @@
-package day_29_02_2024.zadanie_10.objects;
+package day_29_02_2024.zadanie_11.objects;
 
-import day_29_02_2024.zadanie_10.interfaces.Movable;
+import day_29_02_2024.zadanie_11.interfaces.Movable;
+import day_29_02_2024.zadanie_11.interfaces.Resizable;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Circle implements Movable {
+public class Circle implements Movable, Resizable {
 
     private Point2D center;
 
@@ -61,5 +62,15 @@ public class Circle implements Movable {
         this.point.setY(this.point.getY()+moveDirection.getY());
         this.point.setX(this.point.getX()+moveDirection.getX());
 
+    }
+
+    public Point2D getCenter() {
+        return center;
+    }
+
+    @Override
+    public void resize(double resizeFactor) {
+        this.point.setY(this.point.getY()*resizeFactor);
+        this.point.setX(this.point.getX()*resizeFactor);
     }
 }

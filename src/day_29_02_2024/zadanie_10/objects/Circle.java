@@ -1,9 +1,11 @@
-package day_29_02_2024.objects;
+package day_29_02_2024.zadanie_10.objects;
+
+import day_29_02_2024.zadanie_10.interfaces.Movable;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Circle {
+public class Circle implements Movable {
 
     private Point2D center;
 
@@ -38,6 +40,10 @@ public class Circle {
         }
     }
 
+    public Point2D getCenter() {
+        return center;
+    }
+
     public List<Point2D> getSlicePoints(Point2D p){
         if (Math.hypot(p.getX()-this.center.getX(), p.getY()-this.center.getY())
                 != this.getRadius()	) {
@@ -50,5 +56,16 @@ public class Circle {
             return List.of(p1,p2,p3);
         }
     }
+
+    @Override
+    public void moveDirection(MoveDirection moveDirection) {
+        this.center.setY(this.center.getY()+moveDirection.getY());
+        this.center.setX(this.center.getX()+moveDirection.getX());
+
+        this.point.setY(this.point.getY()+moveDirection.getY());
+        this.point.setX(this.point.getX()+moveDirection.getX());
+
+    }
+
 
 }

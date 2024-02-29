@@ -1,2 +1,7 @@
-package day_29_02_2024.zadanie_11.interfaces;public interface Resizable {
+package day_29_02_2024.zadanie_11.interfaces;
+
+public interface Resizable {
+
+
+    void resize(double resizeFactor);
 }
