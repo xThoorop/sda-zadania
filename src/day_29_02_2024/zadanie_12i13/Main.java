@@ -1,8 +1,8 @@
-package day_29_02_2024.zadanie_12;
+package day_29_02_2024.zadanie_12i13;
 
-import day_29_02_2024.zadanie_12.enums.EngineType;
-import day_29_02_2024.zadanie_12.objects.Car;
-import day_29_02_2024.zadanie_12.objects.Manufacturer;
+import day_29_02_2024.zadanie_12i13.enums.EngineType;
+import day_29_02_2024.zadanie_12i13.objects.Car;
+import day_29_02_2024.zadanie_12i13.objects.Manufacturer;
 
 import java.time.LocalDate;
 import java.util.Arrays;

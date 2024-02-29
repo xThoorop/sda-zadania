@@ -1,4 +1,4 @@
-package day_29_02_2024.zadanie_12.objects;
+package day_29_02_2024.zadanie_12i13.objects;
 
 import java.time.LocalDate;
 import java.util.Objects;
