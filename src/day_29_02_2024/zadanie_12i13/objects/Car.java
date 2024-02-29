@@ -1,6 +1,7 @@
 package day_29_02_2024.zadanie_12i13.objects;
 
 import day_29_02_2024.zadanie_12i13.enums.EngineType;
+import day_29_02_2024.zadanie_12i13.managers.CarService;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -24,10 +25,11 @@ Uwzględnij wszystkie niezbędne metody oraz parametry konstruktora. Zaimplement
     public Car(String name, String model, int price, LocalDate dateOfProduction, List<Manufacturer> manufacturers, EngineType engineType) {
         this.name = name;
         this.model = model;
-        this.price = cena;
+        this.price = price;
         this.dateOfProduction = dateOfProduction;
         this.manufacturers = manufacturers;
         this.engineType = engineType;
+        CarService.addCar(this);
     }
 
     @Override

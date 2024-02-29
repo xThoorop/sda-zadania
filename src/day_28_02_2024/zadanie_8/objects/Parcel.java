@@ -1,5 +1,8 @@
 package day_28_02_2024.zadanie_8.objects;
 
+import day_28_02_2024.zadanie_8.interfaces.Validator;
+import day_28_02_2024.zadanie_8.validators.ParcelValidator;
+
 public class Parcel {
 
     private int xLenght;
