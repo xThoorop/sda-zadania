@@ -7,7 +7,7 @@ import day_29_02_2024.zadanie_12i13.objects.Car;
 import day_29_02_2024.zadanie_12i13.objects.Manufacturer;
 
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -68,9 +68,12 @@ public class CarService {
     }
 
 //zwracanie listy wszystkich aut posortowanych zgodnie z przekazanym parametrem: rosnąco/malejąco,
-    public static List<Car> getCarWithSortedEngines(){
+    public static List<Car> getCarWithSortedEngines(boolean ascending){
         List<Car> cars = new ArrayList<>(getCars());
         cars.sort(new CarComparator());
+        if(ascending){
+            Collections.reverse(cars);
+        }
         return cars;
     }
 

@@ -16,6 +16,6 @@ public class Main {
         Manufacturer audi = new Manufacturer("Audi", LocalDate.of(1909,7,16),"Niemcy");
         Car audis = new Car("Audi","A4",40000,LocalDate.now(), Arrays.asList(vw,audi), EngineType.V8);
         Car golf = new Car("GOLF","5",4000,LocalDate.now(), Arrays.asList(vw), EngineType.V6);
-        System.out.println(CarService.getCarWithSortedEngines());
+        System.out.println(CarService.getCarWithSortedEngines(false));
     }
 }
