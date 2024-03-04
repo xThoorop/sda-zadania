@@ -62,7 +62,8 @@ public class CarService {
         return cheapestCar;
     }
 
-    public static Car getCarWith3Manufacturer(){
+    public static Car getCarWith3Manufacturer() throws CarListEmptyException {
+        if(cars.isEmpty()) throw new CarListEmptyException();
         return cars.stream().filter(c -> c.getManufacturers().size()>=3).findFirst().get();
     }
 
