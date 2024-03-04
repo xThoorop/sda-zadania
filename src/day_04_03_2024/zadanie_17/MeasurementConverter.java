@@ -12,8 +12,8 @@ public class MeasurementConverter {
 
 
 
-    public static void convert(int value, ConversionType conversionType){
-
+    public static float convert(int value, ConversionType conversionType){
+        return conversionType.getValue()*value;
     }
 
 }

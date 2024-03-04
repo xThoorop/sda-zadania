@@ -24,10 +24,7 @@ public enum ConversionType {
     }
 
 
-    public static float convert(ConversionType conversionType, float value){
-        return conversionType.value*value;
+    public float getValue() {
+        return value;
     }
-
-
-
 }
