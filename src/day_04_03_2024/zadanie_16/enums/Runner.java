@@ -31,7 +31,7 @@ która przyjmuje na wejściu dowolny czas przebiegnięcia maratonu, a jako rezul
     //ja 150
     //beginner 140-400
     public static Runner getFitnessLevel(int minutes){
-        return Arrays.stream(Runner.values()).filter(r -> minutes >= r.getMinTime() && minutes <=r.getMaxTime()).findAny().get();
+        return Arrays.stream(Runner.values()).filter(r -> minutes >= r.getMinTime() && minutes <=r.getMaxTime()).findAny().orElse(null);
     }
 
     public int getMinTime() {
