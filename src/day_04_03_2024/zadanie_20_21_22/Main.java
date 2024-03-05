@@ -1,4 +1,4 @@
-package day_04_03_2024.zadanie_20;
+package day_04_03_2024.zadanie_20_i_21;
 
 public class Main {
 
