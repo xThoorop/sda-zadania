@@ -29,6 +29,7 @@ public class ReverserFile {
             sb.append(s);
             sb.append("\n");
         }
+        sb.delete(sb.length()-1,sb.length());
         sb.reverse();
         contest = Arrays.stream(sb.toString().split("\n")).toList();
     }
