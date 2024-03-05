@@ -37,13 +37,12 @@ public class ReverserFile {
         return contest;
     }
 
-    public void makeReversedFile() throws IOException {
-        String[] nameAndEnlargment = path.getFileName().toString().split("\\.");//nazwa i rozszerzenie
-        String filename = nameAndEnlargment[0];
+    public void makeNewFile() throws IOException {
+        String filename = path.getFileName().toString().split("\\.")[0];//pobieranie nazwy bez .txt
         StringBuilder sb = new StringBuilder();
         sb.append(filename);
         sb.reverse();
-        Path newPath = Path.of(path.toString().replace(filename,sb.toString()));
+        Path newPath = Path.of(path.toString().replace(filename,sb.toString()));//podmieniamy tylko nazwe .txt zostaje
         Files.write(newPath,contest);
 
     }

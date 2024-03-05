@@ -16,6 +16,6 @@ public class Main {
     public static void test() throws IOException {
         ReverserFile reverserFile = new ReverserFile(Path.of("resources/abc.txt"));
         reverserFile.reverse();
-        reverserFile.makeReversedFile();
+        reverserFile.makeNewFile();
     }
 }
