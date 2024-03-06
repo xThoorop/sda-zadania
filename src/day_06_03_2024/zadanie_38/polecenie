@@ -1,0 +1,4 @@
+Napisz program, który ma za zadanie rozwiązać poniższy problem.
+Istnieje system przechowujący aktualne wyniki w zawodach. Wiele ekranów odczytuje aktualne wyniki, natomiast kilka czujników aktualizuje te wyniki.
+Napisz program, który pozwala na nieprzerwany odczyt danych przez wiele ekranów (wątków) oraz aktualizację danych przez wiele czujników (wątków) - ustaw to jako operacje cykliczne.
+Wykorzystaj obiekty 'Atomic' aby zapewnić atomowość operacji.
