@@ -12,7 +12,7 @@ Na każdym z wątków (Thread) użyj metody start().
 
 
     public static void main(String[] args) {
-        char[] namegen = "Asia miala kota ktory sie nazywal Maciej, Byl czarny z bialymi latkami".toCharArray();
+        char[] namegen = "Asia miala kota ktory sie nazywal Maciej, byl czarny z bialymi latkami".toCharArray();
         for (int i = 1; i < 11; i++) {
             String name = String.valueOf(namegen[i])+String.valueOf(namegen[i+3])+String.valueOf(namegen[i+4]);
             Thread thread = new Thread(new ThreadPlaygroundRunnable(name));
