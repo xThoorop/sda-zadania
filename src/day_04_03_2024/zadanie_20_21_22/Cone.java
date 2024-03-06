@@ -1,20 +1,41 @@
-package day_04_03_2024.zadanie_20_i_21;
+package day_04_03_2024.zadanie_20_21_22;
 
 public class Cone extends Shape3D{
 
+    private double radius;
 
-    @Override
-    double calculatePermiter() {
-        return 0;
+    private double height;
+    private double creatingCone;
+    private double volume;
+
+    public Cone(double radius, double height, double creatingCone) {
+        this.radius = radius;
+        this.height = height;
+        this.creatingCone = creatingCone;
+        this.volume = calculateVolume();
     }
 
     @Override
-    double calculateArea() {
-        return 0;
+    public double calculateVolume() {
+        return (double) 1 / 3 * (Math.PI * Math.pow(radius, 2)) * height;
+    }
+
+
+
+
+    @Override
+    public double calculatePermiter() {
+        throw new RuntimeException();
     }
 
     @Override
-    double calculateVolume() {
-        return 0;
+    public double calculateArea() {
+        return (Math.PI * Math.pow(radius, 2)) + (Math.PI * this.radius * this.creatingCone);
+    }
+
+
+    @Override
+    public Cone fill() {
+        return null;
     }
 }
