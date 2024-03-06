@@ -25,7 +25,7 @@ Wykorzystaj obiekty 'Atomic' aby zapewnić atomowość operacji.
     public static void main(String[] args) {
         results = new Results();
         ScheduledExecutorService thread = Executors.newSingleThreadScheduledExecutor();
-        thread.scheduleAtFixedRate(new ViewRunnable(), 0, 1, TimeUnit.SECONDS);
+        thread.scheduleAtFixedRate(new ViewRunnable(), 0, 100, TimeUnit.MILLISECONDS);
         threads.add(thread);
         thread = Executors.newSingleThreadScheduledExecutor();
         thread.scheduleAtFixedRate(new CheckGoalRunnable(), 0, 1, TimeUnit.SECONDS);

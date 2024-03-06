@@ -9,6 +9,7 @@ public class CheckGoalRunnable implements Runnable{
     public void run() {
         if(true){//jezeli jest gol
             Main.getResults().addResult(1);
+            System.out.println("dodano 1 wynik " + Main.getResults().getResult().get());
         }
     }
 }
