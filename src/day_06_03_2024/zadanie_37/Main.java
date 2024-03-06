@@ -27,6 +27,6 @@ W iteracji dodaj do Executora 10 obiektów klasy ThreadPlaygroundRunnable z popr
         }
         executor.shutdown();
         executor.awaitTermination(5, TimeUnit.SECONDS);
-        System.out.println(System.nanoTime()-start + "nano");
+        System.out.println(System.nanoTime()-start + "nano ");
     }
 }
