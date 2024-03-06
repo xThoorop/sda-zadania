@@ -17,8 +17,8 @@ public class Results {
     public AtomicInteger getResult() {
         return result;
     }
-    public void addResult(int i) {
-        this.result.addAndGet(i);
+    public int addResult(int i) {
+        return this.result.addAndGet(i);
     }
     public void setResult(int i) {
         this.result.set(i);
